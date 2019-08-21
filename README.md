@@ -11,6 +11,18 @@ $ pip install -e git+https://github.com/Qordobacode/library.qai.spacy.git@master
 import spacy
 nlp = spacy.load('en_qai_sm')
 ```
+## About SpaCy pipelines:
+
+Default spaCy pipeline consists of 4 steps (components):
+
+![spaCy pipeline](img/pipeline.png)
+
+- `tokenizer` - splits text into tokens
+- `tagger` - assigns part-of-speech tags
+- `parser` - assigns dependency labels
+- `ner` - detects and label named entities
+
+Reference: [spaCy docs](https://spacy.io/usage/processing-pipelines).
 
 ## Pipeline components:
 
