@@ -1,0 +1,199 @@
+    {
+        "1-hyphen": [
+            {
+                "IS_ALPHA": true
+            },
+            {
+                "ORTH": "-"
+            },
+            {
+                "IS_ALPHA": true
+            }
+        ],
+
+        "2-hyphen": [
+            {
+                "IS_ALPHA": true
+            },
+            {
+                "ORTH": "-"
+            },
+            {
+                "IS_ALPHA": true
+            },
+            {
+                "ORTH": "-"
+            },
+            {
+                "IS_ALPHA": true
+            }
+        ],
+
+        "3-hyphen": [
+            {
+                "IS_ALPHA": true
+            },
+            {
+                "ORTH": "-"
+            },
+            {
+                "IS_ALPHA": true
+            },
+            {
+                "ORTH": "-"
+            },
+            {
+                "IS_ALPHA": true
+            },
+            {
+                "ORTH": "-"
+            },
+            {
+                "IS_ALPHA": true
+            }
+        ],
+
+        "4-hyphen": [
+            {
+                "IS_ALPHA": true
+            },
+            {
+                "ORTH": "-"
+            },
+            {
+                "IS_ALPHA": true
+            },
+            {
+                "ORTH": "-"
+            },
+            {
+                "IS_ALPHA": true
+            },
+            {
+                "ORTH": "-"
+            },
+            {
+                "IS_ALPHA": true
+            },
+            {
+                "ORTH": "-"
+            },
+            {
+                "IS_ALPHA": true
+            }
+        ],
+
+        "contr1": [
+            {
+                "PRON": true
+            },
+            {
+                "ORTH": "'m"
+            }
+        ],
+
+        "contr2": [
+            {
+                "PRON": true
+            },
+            {
+                "ORTH": "'s"
+            }
+        ],
+
+        "contr3": [
+            {
+                "PRON": true
+            },
+            {
+                "ORTH": "'d"
+            }
+        ],
+
+        "contr4": [
+            {
+                "PRON": true
+            },
+            {
+                "ORTH": "'ve"
+            }
+        ],
+
+        "contr5": [
+            {
+                "PRON": true
+            },
+            {
+                "ORTH": "'re"
+            }
+        ],
+
+        "contr6": [
+            {
+                "PRON": true
+            },
+            {
+                "ORTH": "'ll"
+            }
+        ],
+
+        "contr7": [
+            {
+                "VERB": true
+            },
+            {
+                "ORTH": "n't"
+            }
+        ],
+
+        "contr8": [
+            {
+                "IS_ALPHA": true
+            },
+            {
+                "ORTH": "n't"
+            },
+            {
+                "ORTH": "'ve"
+            }
+        ],
+
+        "contr9": [
+            {
+                "IS_ALPHA": true
+            },
+            {
+                "ORTH": "'d"
+            },
+            {
+                "ORTH": "'ve"
+            }
+        ],
+
+        "special1": [
+            {
+                "ORTH": "gon"
+            },
+            {
+                "ORTH": "na"
+            }
+        ],
+
+        "special2": [
+            {
+                "ORTH": "got"
+            },
+            {
+                "ORTH": "ta"
+            }
+        ],
+
+        "special3": [
+            {
+                "ORTH": "y'"
+            },
+            {
+                "ORTH": "all"
+            }
+        ]
+    }

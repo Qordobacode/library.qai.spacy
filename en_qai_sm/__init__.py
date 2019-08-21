@@ -20,7 +20,7 @@ class MergeMatcher(object):
     name = "merge_matcher"
 
     def __init__(self, nlp, **cfg):
-        self.patterns_path = "patterns.json"
+        self.patterns_file = "patterns.json"
         self.matcher = Matcher(nlp.vocab)
 
     def __call__(self, doc):
@@ -34,9 +34,9 @@ class MergeMatcher(object):
         return doc
 
     def from_disk(self, path, **cfg):
-        patterns_path = path / self.patterns_path
-        with open(patterns_path, 'r', encoding='utf8') as f:
+        patterns_path = path / self.patterns_file
+        with open(patterns_path, "r", encoding="utf8") as f:
             self.patterns = json.load(f)
-            for label, patterns in self.patterns.items():
-                self.matcher.add(label, None, *patterns)
+            for label, pattern in self.patterns.items():
+                self.matcher.add(label, None, pattern)
         return self
