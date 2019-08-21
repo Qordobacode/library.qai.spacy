@@ -29,3 +29,6 @@ where ```merge_matcher``` matches and merges into 1 token spans of type:
 - connected by hyphens ex.  ```state-of-the-art```
 - contractions ex. ```don't```
 - special (informal) short forms ex. ```gonna```
+
+## Todo:
+- export merging patterns to ```patterns.json``` (currently in ```__init__.py```)
