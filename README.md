@@ -22,6 +22,8 @@ Default spaCy pipeline consists of 4 steps (components):
 - `parser` - assigns dependency labels
 - `ner` - detects and label named entities
 
+Custom components (ex. any functions on `doc`) can be inserted into the pipeline (at any place after the `tokenizer`. For simplicity, `tokenizer` is not listed in pipelines descriptions.)
+
 Reference: [spaCy docs](https://spacy.io/usage/processing-pipelines).
 
 ## Pipeline components:
@@ -38,7 +40,7 @@ pipeline = [
     ]
 ```
 where ```merge_matcher``` matches and merges into 1 token spans of type:
-- connected by hyphens ex.  ```state-of-the-art```
+- connected by 1 hyphen ex.  ```rock-hard```
 - contractions ex. ```don't```
 - special (informal) short forms ex. ```gonna```
 
