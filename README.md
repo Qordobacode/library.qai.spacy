@@ -1,17 +1,33 @@
 # library.qai.spacy
+
 Customized SpaCy pipeline
 
 ## Installing
+
+This is available on [PyPi](https://pypi.org/project/en-qai-sm/)
+
 ```sh
-$ pip install -e git+https://github.com/Qordobacode/library.qai.spacy.git@master#egg=en_qai_sm
-> installs the package and deps from master branch of qai.spacy
+$ pip install en-qai-sm
+> installs the package and deps including spacy
 ```
+
 ## Usage
+
 ```python
 import spacy
 nlp = spacy.load('en_qai_sm')
+>>> doc = nlp("I ain't got no hands!")
+>>> for token in doc: print(token, token.pos_)
+...
+I PRON
+ain't VERB
+got VERB
+no DET
+hands NOUN
+! PUNCT
 ```
-## About SpaCy pipelines:
+
+## About SpaCy pipelines
 
 Default spaCy pipeline consists of 4 steps (components):
 
@@ -26,11 +42,12 @@ Custom components (ex. any functions on `doc`) can be inserted into the pipeline
 
 Reference: [spaCy docs](https://spacy.io/usage/processing-pipelines).
 
-## Pipeline components:
+## Pipeline components
 
 ### v1.0.0
 
 The pipeline consists of:
+
 ```python
 pipeline = [
     "merge_matcher",
@@ -39,10 +56,17 @@ pipeline = [
     "ner"
     ]
 ```
+
 where ```merge_matcher``` matches and merges into 1 token spans of type:
+
 - connected by 1 hyphen ex.  ```rock-hard```
 - contractions ex. ```don't```
 - special (informal) short forms ex. ```gonna```
 
-## Todo:
+## Todo
+
 - export merging patterns to ```patterns.json``` (currently in ```__init__.py```)
+
+## License
+
+As this is just a small extension of spaCy's `en_core_web_sm`, we include the same license - MIT.
