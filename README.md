@@ -59,13 +59,10 @@ pipeline = [
 
 where ```merge_matcher``` matches and merges into 1 token spans of type:
 
-- connected by 1 hyphen ex.  ```rock-hard```
+- connected by hyphens ex.  ```rock-hard```
 - contractions ex. ```don't```
 - special (informal) short forms ex. ```gonna```
 
-## Todo
-
-- export merging patterns to ```patterns.json``` (currently in ```__init__.py```)
 
 ## License
 
