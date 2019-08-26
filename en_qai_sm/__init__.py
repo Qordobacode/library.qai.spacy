@@ -3,6 +3,7 @@ from __future__ import unicode_literals
 import json
 from pathlib import Path
 
+from neuralcoref import NeuralCoref
 from spacy.language import Language
 from spacy.matcher import Matcher
 from spacy.tokens import Span
@@ -13,8 +14,8 @@ __version__ = get_model_meta(Path(__file__).parent)["version"]
 
 def load(**overrides):
     Language.factories["merge_matcher"] = lambda nlp, **cfg: MergeMatcher(nlp, **cfg)
+    Language.factories["neuralcoref"] = lambda nlp, **cfg: NeuralCoref(nlp.vocab, **cfg)
     return load_model_from_init_py(__file__, **overrides)
-
 
 class MergeMatcher(object):
     name = "merge_matcher"

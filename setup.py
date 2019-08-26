@@ -38,7 +38,6 @@ def list_requirements(meta):
         requirements += meta["requirements"]
     return requirements
 
-
 def setup_package():
     root = path.abspath(path.dirname(__file__))
     meta_path = path.join(root, "meta.json")
