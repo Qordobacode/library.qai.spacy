@@ -1,6 +1,13 @@
 #!/bin/bash
 set -e
 
+# To use this script
+# 1. increment the version property in meta.json
+# 2. make sure you have a pypi account with access to en-qai-sm
+# 3. have the credentials in a .pypirc file
+# 4. .pypirc needs to be in the root of this directory, or in ~, or if elsewhere, passed in as the argument of the script, e.g. ./build_release.sh path/to/.pypirc
+# 5. run ./build_release.sh (possibly with path to pypirc)
+
 # check that jq is installed for parsing meta.json
 command -v jq >/dev/null 2>&1 || { echo >&2 "I require jq but it's not installed.  Aborting."; exit 1; }
 
