@@ -38,7 +38,11 @@ def list_requirements(meta):
         requirements += meta["requirements"]
     return requirements
 
+
 def setup_package():
+    """
+    I think this works IF you run build.sh first
+    """
     root = path.abspath(path.dirname(__file__))
     meta_path = path.join(root, "meta.json")
     meta = load_meta(meta_path)
