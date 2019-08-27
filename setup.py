@@ -38,7 +38,12 @@ def list_requirements(meta):
         requirements += meta["requirements"]
     return requirements
 
+
 def setup_package():
+    """
+    Don't run setup.py directly, there is renaming that needs to happen first
+    So just run ./build_release.sh which calls this
+    """
     root = path.abspath(path.dirname(__file__))
     meta_path = path.join(root, "meta.json")
     meta = load_meta(meta_path)
