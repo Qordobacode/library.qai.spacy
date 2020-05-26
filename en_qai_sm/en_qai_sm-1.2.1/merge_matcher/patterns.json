@@ -85,7 +85,7 @@
 
         "contr1": [
             {
-                "PRON": true
+                "POS": "PRON"
             },
             {
                 "ORTH": "'m"
@@ -94,7 +94,8 @@
 
         "contr2": [
             {
-                "PRON": true
+                "POS": {"IN": ["PRON", "PROPN"]},
+                "DEP":  {"NOT_IN": ["poss"]}
             },
             {
                 "ORTH": "'s"
@@ -103,7 +104,7 @@
 
         "contr3": [
             {
-                "PRON": true
+                "POS": "PRON"
             },
             {
                 "ORTH": "'d"
@@ -112,7 +113,7 @@
 
         "contr4": [
             {
-                "PRON": true
+                "POS": "PRON"
             },
             {
                 "ORTH": "'ve"
@@ -121,7 +122,7 @@
 
         "contr5": [
             {
-                "PRON": true
+                "POS": "PRON"
             },
             {
                 "ORTH": "'re"
@@ -130,7 +131,7 @@
 
         "contr6": [
             {
-                "PRON": true
+                "POS": "PRON"
             },
             {
                 "ORTH": "'ll"
@@ -139,7 +140,7 @@
 
         "contr7": [
             {
-                "VERB": true
+                "POS": "VERB"
             },
             {
                 "ORTH": "n't"
